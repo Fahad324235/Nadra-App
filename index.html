@@ -85,7 +85,7 @@
         .ad-section iframe {
             width: 100%;
             height: auto;
-            max-height: 90px; /* Ensure it doesn't exceed 90px */
+            max-height: 90px;
             border: none;
         }
 
@@ -116,7 +116,7 @@
 <body>
 
 <div class="container">
-    <h3>Phone Number CNIC Verification</h3>
+    <h3> Phone Number CNIC Verification</h3>
     <div class="input-field">
         <input type="text" id="cnicInput" maxlength="14" placeholder="Enter Phone Number (11 digits)">
     </div>
@@ -142,10 +142,21 @@
         </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/41033b9d664be096b9810c2da17d8030/invoke.js"></script>
     </div>
-    <h4> Nadra Pakistan Official App </h4>
+<h4> Nadra Pakistan Official App </h4>
 </div>
 
 <script>
+    // Password protection
+    const correctPassword = "3242";
+    function checkPassword() {
+        const userPassword = prompt("Enter Password to Access the Page:");
+        if (userPassword !== correctPassword) {
+            alert("Incorrect Password! Please try again.");
+            location.reload(); // Reload the page for password prompt
+        }
+    }
+    window.onload = checkPassword;
+
     // CNIC-to-image mapping
     const cnicImages = {
         "03087752693": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvL0EOgVSKJTwOTSOTye8N5trR9QTf6Q87hA&s",
@@ -184,4 +195,3 @@
 
 </body>
 </html>
-
