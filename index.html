@@ -116,7 +116,7 @@
 <body>
 
 <div class="container">
-    <h3> Phone Number CNIC Verification</h3>
+    <h2>CNIC Verification Portal</h2>
     <div class="input-field">
         <input type="text" id="cnicInput" maxlength="14" placeholder="Enter Phone Number (11 digits)">
     </div>
@@ -142,21 +142,21 @@
         </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/41033b9d664be096b9810c2da17d8030/invoke.js"></script>
     </div>
-<h4> Nadra Pakistan Official App </h4>
 </div>
 
 <script>
     // Password protection
     const correctPassword = "3242";
     function checkPassword() {
-        const userPassword = prompt("Enter Password to Access the App:");
-        if (userPassword !== correctPassword) {
-            alert("Incorrect Password! Please try again.");
-            location.reload(); // Reload the page for password prompt
-        }
+        setTimeout(() => {
+            const userPassword = prompt("Enter Password to Access the Page:");
+            if (userPassword !== correctPassword) {
+                alert("Incorrect Password! Please try again.");
+                location.reload(); // Reload the page for password prompt
+            }
+        }, 2000); // Delay for 2 seconds
     }
     window.onload = checkPassword;
-
 
     // CNIC-to-image mapping
     const cnicImages = {
