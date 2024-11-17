@@ -149,14 +149,14 @@
     // Password protection
     const correctPassword = "3242";
     function checkPassword() {
-        const userPassword = prompt("Enter Password To Access The App:");
+        const userPassword = prompt("Enter Password to Access the App:");
         if (userPassword !== correctPassword) {
             alert("Incorrect Password! Please try again.");
             location.reload(); // Reload the page for password prompt
         }
-        }, 2000); // Delay for 2 seconds
     }
     window.onload = checkPassword;
+
 
     // CNIC-to-image mapping
     const cnicImages = {
